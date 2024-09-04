@@ -1,3 +1,10 @@
+from django.urls import path, include
+
+urlpatterns = [
+    
+    path('', include('main.urls')),
+    
+]
 """
 URL configuration for mental_health_tracker project.
 
