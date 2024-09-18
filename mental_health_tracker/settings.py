@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-3^_80isu@bt*jz($6gpcw7w&()ky=zgk%aaf$zg7vf=dtvh4v!
 PRODUCTION = os.getenv("PRODUCTION", False)
 DEBUG = not PRODUCTION
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "http://zufar-romli-mentalhealthtrackerpbp.pbp.cs.ui.ac.id", "https://zufar-romli-mentalhealthtrackerpbp.pbp.cs.ui.ac.id"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "zufar-romli-mentalhealthtrackerpbp.pbp.cs.ui.ac.id"]
 
 
 # Application definition
@@ -53,6 +53,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'mental_health_tracker.urls'
+CSRF_TRUSTED_ORIGINS = ["http://localhost","http://127.0.0.1","http://zufar.romli:oTwT2hgKkERVi1LzthX_P8z5mbRsi7h-@pbp.cs.ui.ac.id", "https://zufar.romli:oTwT2hgKkERVi1LzthX_P8z5mbRsi7h-@pbp.cs.ui.ac.id"]
 
 TEMPLATES = [
     {
